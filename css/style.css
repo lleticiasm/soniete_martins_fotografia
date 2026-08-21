@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #faf8f5;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    height: 100px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+
+.logo {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.logo span {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #444;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #a67c52; /* cor levemente alaranjada do menu ao passar o mouse sobre um itm */
+}
+
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("../img/principal.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-content {
+    max-width: 600px;
+    color: white;
+}
+
+
+.subtitulo {
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    display: block;
+    font-style: italic;
+}
+
+
+.hero p:not(.subtitulo) {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+.botao {
+    display: inline-block;
+    padding: 13px 28px;
+    border: none;
+    background-color: #a67c52;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+
+.botao:hover {
+    background-color: #80603f;
+    transform: translateY(-2px);
+}
+
+
+.perfil {
+    padding: 100px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.perfil-imagem {
+    width: 100%;
+}
+
+.perfil-imagem img {
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+.perfil-texto {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.perfil-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.perfil-texto p:not(.subtitulo) {
+    color: #666;
+    font-size: 23px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.botao-claro {
+    margin-top: 15px;
+}
+
+
+.servicos {
+    padding: 90px 10%;
+    text-align: center;
+    background-color: #eee7df;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+.card {
+    background-color: white;
+    padding: 40px 30px;
+    width: 30%;
+}
+
+
+.icone {
+    font-size: 35px;
+    color: #a67c52;
+    margin-bottom: 15px;
+}
+
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.pagina-topo {
+    text-align: center;
+    padding: 100px 20px 70px;
+}
+
+
+.pagina-topo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+.pagina-topo > p:last-child {
+    color: #777;
+}
+
+
+.galeria {
+    padding: 20px 10% 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.foto {
+    width: 100%;
+    overflow: hidden;
+    background-color: #eee7df;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+.foto img:hover {
+    transform: scale(1.05);
+}
+
+
+.convite {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #eee7df;
+}
+
+
+.convite p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+.contato {
+    padding: 20px 10% 100px;
+    display: flex;
+    gap: 80px;
+}
+
+
+.informacoes,
+#formContato {
+    width: 50%;
+}
+
+
+.informacoes h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+
+.informacoes > p {
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+
+.info-item {
+    margin-bottom: 25px;
+}
+
+
+.info-item strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+
+.info-item p {
+    color: #777;
+    margin-top: 5px;
+}
+
+
+#formContato {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#formContato label {
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+
+#formContato input,
+#formContato textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 14px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+#formContato input:focus,
+#formContato textarea:focus {
+    border-color: #a67c52;
+}
+
+
+#formContato button {
+    align-self: flex-start;
+}
+
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #292522;
+    color: #ddd;
+    font-size: 12px;
+    line-height: 2;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .menu {
+        gap: 18px;
+    }
+
+
+    .hero {
+        min-height: 550px;
+        padding: 50px 7%;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .sobre {
+        padding: 70px 7%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .sobre-imagem,
+    .sobre-texto {
+        width: 100%;
+    }
+
+
+    .sobre-imagem img {
+        height: 400px;
+    }
+
+
+    .sobre-texto h2,
+    .servicos h2,
+    .convite h2 {
+        font-size: 35px;
+    }
+
+
+    .cards {
+        flex-direction: column;
+    }
+
+
+    .card {
+        width: 100%;
+    }
+
+
+    .galeria {
+        padding: 20px 7% 70px;
+        grid-template-columns: 1fr;
+    }
+
+
+    .foto {
+        height: 450px;
+    }
+
+
+    .contato {
+        padding: 20px 7% 70px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    .informacoes,
+    #formContato {
+        width: 100%;
+    }
+
+
+    .pagina-topo h1 {
+        font-size: 42px;
+    }
+
+}
+
+/* ==============================
+   MODAL DE MENSAGEM ENVIADA
+   ============================== */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(41, 37, 34, 0.65);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+    z-index: 999;
+}
+
+
+.modal.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.modal-conteudo {
+    width: 100%;
+    max-width: 450px;
+
+    background-color: #faf8f5;
+
+    padding: 45px 40px;
+
+    text-align: center;
+
+    border-radius: 4px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+
+    transform: translateY(20px) scale(0.95);
+
+    transition: 0.3s ease;
+}
+
+
+.modal.ativo .modal-conteudo {
+    transform: translateY(0) scale(1);
+}
+
+
+.modal-icone {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #a67c52;
+
+    color: white;
+
+    font-size: 30px;
+}
+
+
+.modal-conteudo h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    color: #333;
+
+    margin-bottom: 15px;
+}
+
+
+.modal-conteudo p {
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+.modal-conteudo p strong {
+    color: #a67c52;
+}
+
+
+.modal-subtexto {
+    margin-top: 5px;
+
+    color: #777 !important;
+
+    font-size: 13px !important;
+}
+
+
+.modal-conteudo .botao {
+    margin-top: 25px;
+}
